@@ -1,7 +1,11 @@
 # ServiceLayerClient-python
 ## Purpose
-Connecting to the Studyportals ServiceLayer using Studyportals reflector.
+Connecting to the Studyportals ServiceLayer using Studyportals reflector and retrieving data.
 
+## Prerequisite working on it 
+Run `pip install -r requirements.txt` to install all the needed packages for development
+##Installation
+Run `pip install ServiceLayerClient` to install the package for usage
 ## How does it work?
 Create ServiceLayer client with parameters:
 * `reflector_url` - reflector url
