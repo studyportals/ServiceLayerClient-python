@@ -35,16 +35,18 @@ class ServiceLayerClient:
         """
         Returns a full request url with a reflector token
 
-        :param request_params:
+        :param request_params:string: parameters of the request
         :return: full request url
         """
-        return '{}?path={}&{}&token={}'.format(self.reflector_url, self.path, request_params, self.reflector_token)
+        if request_params:
+            return '{}?path={}&{}&token={}'.format(self.reflector_url, self.path, request_params, self.reflector_token)
+        return '{}?path={}&token={}'.format(self.reflector_url, self.path, self.reflector_token)
 
-    def fetch_data(self, request_parameters, attempt=0):
+    def fetch_data(self, request_parameters=None, attempt=0):
         """
         Fetches data from the ServiceLayer using the set parameters.
 
-        :param request_parameters:
+        :param request_parameters:string: parameters of the request
         :param attempt: int: the amount of attempts that are already done for this request
         :return: array/list: array of dictionaries constructed from the json retrieved by executing a ServiceLayer request
         """
@@ -89,7 +91,7 @@ class ServiceLayerClient:
 
         return _parse_data(response_data.text)
 
-    def test_query_connection(self, request_parameters):
+    def test_query_connection(self, request_parameters=None):
         """
         Function to test request to ServiceLayer using the set headers
 
