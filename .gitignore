@@ -1,4 +1,4 @@
 .idea
 dist/
 build/
-ServiceLayerClient.egg-info/
+sl_client.egg-info/

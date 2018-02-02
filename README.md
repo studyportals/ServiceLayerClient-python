@@ -4,8 +4,8 @@ Connecting to the Studyportals ServiceLayer using Studyportals reflector and ret
 
 ## Prerequisite working on it 
 Run `pip install -r requirements.txt` to install all the needed packages for development
-##Installation
-Run `pip install ServiceLayerClient` to install the package for usage
+## Installation
+Run `pip install sl_client` to install the package for usage
 ## How does it work?
 Create ServiceLayer client with parameters:
 * `reflector_url` - reflector url

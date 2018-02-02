@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='ServiceLayerClient',
-    version='1.0',
-    py_modules=['service_layer_client'],
+    name='sl_client',
+    version='1.1',
+    py_modules=['sl_client'],
     license='BSD 3-Clause',
     description="A Python tool that connects to the Studyportals ServiceLayer using Studyportals reflector and retrieves data.",
     url='https://github.com/studyportals/ServiceLayerClient-python',
