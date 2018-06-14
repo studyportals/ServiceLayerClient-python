@@ -74,6 +74,8 @@ class ServiceLayerClient:
                 raise IOError("{}: Service unavailable".format(no_data_retrieved_msg))
 
             # Try the function once more
+            if 'Cache-Control' in self.request_headers:
+                del self.request_headers['Cache-Control']
             return self.fetch_data(request_parameters, attempt + 1)
 
         elif response_data.status_code == 401:

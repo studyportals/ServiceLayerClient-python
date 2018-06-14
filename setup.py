@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='sl_client',
-    version='1.2',
+    version='1.3',
     py_modules=['sl_client'],
     license='BSD 3-Clause',
     description="A Python tool that connects to the Studyportals ServiceLayer using Studyportals reflector and retrieves data.",
